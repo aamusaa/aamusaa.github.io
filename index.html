@@ -14,12 +14,13 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
         <link rel="stylesheet" href="src/remodal.css">
         <link rel="stylesheet" href="src/remodal-default-theme.css">
-        <link rel="stylesheet" href="bootstrap-lightbox.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" />
         <link href="https://fonts.googleapis.com/css?family=Nunito:300,400,700,800" rel="stylesheet">
         <link rel="stylesheet" href="main.css">
         
         <script src="https://use.fontawesome.com/df2067a753.js"></script>
         
+
     </head>
     
     <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
@@ -37,8 +38,8 @@
 
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav navbar-right" onchange="filterContent();">
-                            <li><a href="#myprojects" class="page-scroll">PROJECTS</a></li>
-                            <li><a href="#myprofile" class="page-scroll">PROFILE</a></li>
+                            <li><a href="#myprojects" class="page-scroll" data-toggle="collapse" data-target=".navbar-collapse.in">PROJECTS</a></li>
+                            <li><a href="#myprofile" class="page-scroll" data-toggle="collapse" data-target=".navbar-collapse.in">PROFILE</a></li>
                         </ul>
                     </div>
                 </div>
@@ -231,8 +232,9 @@
         <!-- modal project 1 -->
         <div class="remodal-bg">
             <div class="remodal" data-remodal-id="modal1">
+                <i class="fa fa-times fa-lg" aria-hidden="true" data-remodal-action="cancel"></i>
                 <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
+                    <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
                         <h1>Grip</h1>
                         <br>
                         <p class="tinycaps">Project objective</p>
@@ -244,27 +246,27 @@
                         <p>I began my design process by examining existing climbings apps. While there are many emerging apps in the marketplace for tracking climbs, I focused on mobile guidebooks to assess the sort of features and functions I’ve been exploring with Grip. When I first began the design process for this app concept, there were only a couple of competitors in the app store with dense, awkward UIs. A few years later, there are a handful of solutions with far better UI design and functionality. Nevertheless, there are components I personally could see improvement on and have decided to incorporate within Grip. I included some of my critique and observations for a few climbing apps below.</p>
                         <p><i>*When I use the word “topos” in this project, I am referring to a graphical representation of a climbing route</i></p>
                         <br>
-                        <img src="img/grip1.png" class="img-responsive" id="expandimg">
+                        <a data-fancybox="gallery" href="img/grip1.png"><img src="img/grip1.png" class="img-responsive"></a>
                         <br>
                         <p class="tinycaps">User Flow</p>
                         <p>I came away from my research with the challenge of incorporating the important details found in physical guidebooks within a clear format for a small field of real estate (mobile screen). I made a flowchart to organize my thoughts on how a user would navigate through different features of the app. At this point in the app concept, a user would only be able to submit a filtered search query for climbing crags and save specific routes.</p>
                         <br>
-                        <img src="img/grip2.png" class="img-responsive">
+                        <a data-fancybox="gallery" href="img/grip2.png"><img src="img/grip2.png" class="img-responsive"></a>
                         <br>
                         <p class="tinycaps">Wireframes</p>
                         <p>After fleshing out the necessary functions and page interactions conceptually, I started to design some wireframes.</p>
                         <br>
-                        <img src="img/grip4.png" class="img-responsive">
+                        <a data-fancybox="gallery" href="img/grip3.png"><img src="img/grip3.png" class="img-responsive"></a>
                         <br>
                         <p class="tinycaps">Branding</p>
                         <p>Before I invested more time into the visual details of the app, I decided to work out the branding so as to maintain some consistency and cohesion in the app’s design. Years ago, I named this app concept Grippii, playing on the action most used in rock climbing (gripping rock), but since then, have shortened the name to Grip.</p>
                         <br>
-                        <img src="img/grip3.png" class="img-responsive">
+                        <a data-fancybox="gallery" href="img/grip4.png"><img src="img/grip4.png" class="img-responsive"></a>
                         <br>
                         <p class="tinycaps">Mockups</p>
                         <p>Employing my wireframes and branding guidelines for direction, I began to craft a new set of mockups.</p>
                         <br>
-                        <img src="img/grip5.png" class="img-responsive">
+                        <a data-fancybox="gallery" href="img/grip5.png"><img src="img/grip5.png" class="img-responsive"></a>
                         <br>
                         <p class="tinycaps">User Testing</p>
                         <p>With my collection of mockup screens, I set about to user test Grip with real climbers. Below are summarized notes from a couple of my testing sessions.</p>
@@ -292,11 +294,11 @@
                         <p class="tinycaps">Mockups V2</p>
                         <p>I expanded my set of icons to give the user more context about the kind of climbing involved for their crag of interest.</p>
                         <br>
-                        <img src="img/grip6.png" class="img-responsive">
+                        <a data-fancybox="gallery" href="img/grip6.png"><img src="img/grip6.png" class="img-responsive"></a>
                         <br>
                         <p>Below is the latest set of screens I’ve created, with some new updates based on user feedback.</p>
                         <br>
-                        <img src="img/grip7.png" class="img-responsive">
+                        <a data-fancybox="gallery" href="img/grip7.png"><img src="img/grip7.png" class="img-responsive"></a>
                         <br>
                         <p class="tinycaps">Next Steps</p>
                         <p>As I’ve been casually revising this app for about 3 years now, I don’t see an end point in the near future. I find it quite fun to apply new ideas and skills and insights to old work.</p>
@@ -313,11 +315,15 @@
             </div>
         </div>
         
+ 
+	   </div>
+        
         <!-- modal project 2 -->
         <div class="remodal-bg">
             <div class="remodal" data-remodal-id="modal2">
+                <i class="fa fa-times fa-lg" aria-hidden="true" data-remodal-action="cancel"></i>
                 <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
+                    <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
                         <h1>Mito</h1>
                         <br>
                         <p class="tinycaps">Roles</p>
@@ -341,7 +347,7 @@
                         <p>Mito is outfitted with technology that connects to smart devices in a household. The provotype unit measures energy consumption from these devices and by determining the overall level of environmental sustainability, the bionic lungs will “swell” or “wither”.</p>
                         <p>The smart devices linked to the Mito are managed via mobile. Below are a few UI wireframes I designed to show some of the control features.</p>
                         <br>
-                        <img src="img/mito3.png" class="img-responsive">
+                        <a data-fancybox="gallery" href="img/mito3.png"><img src="img/mito3.png" class="img-responsive"></a>
                         <p><i>Another group member designed the energy usage stats screens, while my focus was on the connected devices and appliances.</i></p>
                         <br>
                         <p>As this project was more of a “hypothetical” design challenge, I did not worry too much about the feasibility of the app in the real world. However, a few months later, I consulted an electrician and updated the design to more accurately depict the main function of tracking energy consumption.</p>
@@ -352,7 +358,7 @@
                             <li>Cutting the provocative lung concept in lieu of a simple home page</li>
                         </ol>
                         <br>
-                        <img src="img/mito4.png" class="img-responsive">
+                        <a data-fancybox="gallery" href="img/mito4.png"><img src="img/mito4.png" class="img-responsive"></a>
                         <br>
                     </div>
                 </div>
@@ -363,8 +369,9 @@
         <!-- modal project 3 -->
         <div class="remodal-bg">
             <div class="remodal" data-remodal-id="modal3">
+                <i class="fa fa-times fa-lg" aria-hidden="true" data-remodal-action="cancel"></i>
                 <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
+                    <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
                         <h1>Redondo</h1>
                         <br>
                         <p class="tinycaps">Roles</p>
@@ -409,8 +416,9 @@
          <!-- modal project 4 -->
         <div class="remodal-bg">
             <div class="remodal" data-remodal-id="modal4">
+                <i class="fa fa-times fa-lg" aria-hidden="true" data-remodal-action="cancel"></i>
                 <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
+                    <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
                         <h1>Hylo</h1>
                         <h4>1st place at the University of Waterloo Game Design Camp</h4>
                         <br>
@@ -460,8 +468,9 @@
         <!-- modal project 5 -->
         <div class="remodal-bg">
             <div class="remodal" data-remodal-id="modal5">
+                <i class="fa fa-times fa-lg" aria-hidden="true" data-remodal-action="cancel"></i>
                 <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
+                    <div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
                         <h1>ØMO</h1>
                         <br>
                         <p class="tinycaps">Roles</p>
@@ -596,10 +605,10 @@
         <script src="src/remodal.js"></script>
         <script src="js/jquery.easing.min.js"></script>
         <script src="js/scrolling-nav.js"></script>
-        <script src="js/bootstrap-lightbox.min.js"></script>
-        <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4/jquery.min.js"></script>
-        <script type="text/javascript" src="/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js"></script>
+    
         <script src="js/main.js"></script>
+    
         
         
     </body>
