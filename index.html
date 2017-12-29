@@ -24,6 +24,14 @@
     </head>
     
     <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
+        
+        <div class="spinner-wrapper">
+            <div class="spinner">
+                <div class="dot1"></div>
+                <div class="dot2"></div>
+            </div>
+        </div>
+        
         <div id="wrap">
         
             <nav class="navbar navbar-default navbar-fixed-top">
@@ -609,7 +617,19 @@
     
         <script src="js/main.js"></script>
     
-        
+        <script>
+            $(document).ready(function() {
+            //Preloader
+            $(window).on('load', function() {
+            preloaderFadeOutTime = 500;
+            function hidePreloader() {
+            var preloader = $('.spinner-wrapper');
+            preloader.fadeOut(preloaderFadeOutTime);
+            }
+            hidePreloader();
+            });
+            });
+        </script>
         
     </body>
     
