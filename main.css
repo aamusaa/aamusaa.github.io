@@ -10,9 +10,6 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
-
-
-
 /* css preloader spinner */
 
 .spinner {
@@ -313,8 +310,6 @@ z-index: 999999;
 }
 
 
-
-
 /* thumbnail captions */
 figure {
 	position: relative;
@@ -399,8 +394,6 @@ figure:hover img {
         transform: translateY(0px);
     }
 }
-
-
 
 
 
